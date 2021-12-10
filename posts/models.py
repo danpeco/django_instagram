@@ -20,6 +20,6 @@ class Post(models.Model):
     modified = models.DateField(auto_now=True)
 
     def __str__(self):
-        '''Return title and usernmae.'''
+        '''Return title and username.'''
 
-        return f'{title} by {username}'
+        return f'{self.title} by {self.user}'
